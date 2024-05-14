@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sell Product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/sell.js"></script>
+</head>
+
+<body>
+    <main>
+        <form onsubmit="return postProduct()">
+            <div style="display: flex; align-content: center; margin: 150px;"> 
+            <div class="proab1" style="margin-left: 330px; box-shadow: rgb(108, 108, 108) 0px 0px 15px;">
+                <div style="display: flex;">
+                    <img style="height: 50px; border-radius: 50%; border: solid 4px; cursor: pointer;" src="img/buysell.jpeg"/>
+                    <h2 style="cursor: pointer; display: flex; margin-left: 5px; margin-right: 10px; border-left: solid 5px; align-items: center; font-size: 16px;" onclick="location.href='index.html'">BuySell.coM</h2>
+                </div>
+                <div style="margin-top: 20px;">Enter product Name<span style="color: red;">*</span></div>
+                <input class="inputpro" required type="text">
+                <div style="margin-top: 10px;">Enter price <span style="color: red;">*</span></div>
+                <input class="inputpro" required type="number"/>
+                <div style="margin-top: 10px;" type="bio" >Enter bio</div>
+                <input class="inputpro" required/>
+                <br>
+                <label for="photo" style="margin-top: 10px;">Choose product Photo <span style="color: red;">*</span></label>
+                <input type="file" id="photo" accept="image/*">
+    
+                <div style="margin-top: 20px;" class="newac" onclick="location.href='index.html'">Post Product</div>
+                <div style="color: blue; margin: 5px; text-align: center; margin-right: 15px;"><a style="font-size: 15px;" href="https://www.instagram.com/?hl=en">find your account?</a></div>
+                <div style="font-size: 11px; margin-top: 100px; margin-left: 70px;"><a href="https://termly.io/resources/guides/how-to-write-terms-and-conditions/">Terms and Conditions</a></div>
+                <div style="font-size: 11px; margin-top: 10px; margin-left: 90px;"> <a href="https://policies.google.com/privacy?hl=en&gl=us">Privacy Policy</a></div>
+            </div>
+        </div>
+        </form>
+    </main>
+    
+</body>
+
+</html>
